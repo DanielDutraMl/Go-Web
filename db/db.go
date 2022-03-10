@@ -6,7 +6,7 @@ import (
 	_ "github.com/lib/pq"
 )
 
-func conectaComBD() *sql.DB {
+func ConectaComBD() *sql.DB {
 	conexao := "user=postgres dbname=Alura_Loja password=abc123 host=localhost sslmode=disable"
 	db, err := sql.Open("postgres", conexao)
 	if err != nil {
